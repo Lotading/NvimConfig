@@ -8,9 +8,10 @@ return {
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.formatting.clang_format,
+        null_ls.builtins.formatting.rustfmt,
       },
     })
 
-    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+    vim.keymap.set("n", "<leader>fr", vim.lsp.buf.format, {})
   end,
 }

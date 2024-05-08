@@ -20,7 +20,8 @@ return {
     lazy = false,
     config = function()
       local cmp = require("cmp")
-      cmp.setup({
+        cmp.setup({
+        
         window = {
           documentation = cmp.config.window.bordered(),
           completion = cmp.config.window.bordered(),
