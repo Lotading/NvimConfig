@@ -21,16 +21,24 @@ return {
 
       local lspconfig = require("lspconfig")
       lspconfig.tsserver.setup({
-        capabilites = capabilities,
+        capabilities = capabilities,
       })
+      lspconfig.volar.setup({
+        capabilities = capabilities,
+        filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'}
+      })
+      lspconfig.cssls.setup({
+        capabilities = capabilities,
+      })
+
       lspconfig.pyright.setup({
-        capabilites = capabilities,
+        capabilities = capabilities,
       })
       lspconfig.html.setup({
-        capabilites = capabilities,
+        capabilities = capabilities,
       })
       lspconfig.lua_ls.setup({
-        capabilites = capabilities,
+        capabilities = capabilities,
       })
       lspconfig.rust_analyzer.setup({
         capabilities = capabilities,
